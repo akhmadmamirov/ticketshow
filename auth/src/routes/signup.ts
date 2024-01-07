@@ -3,6 +3,7 @@ import { body, validationResult } from 'express-validator';
 import { RequestValidationError } from '../errors/request-validation-error';
 import { User } from '../models/user';
 import * as bcrypt from 'bcrypt';
+import { BadRequestError } from '../errors/bad-request-error';
 
 const router = express.Router();
 
@@ -28,19 +29,12 @@ router.post(
     const existingUser = await User.findOne({email})
 
     if (existingUser) {
-      console.log('Email in use')
-      return res.status(400).send('Email in use')
+      throw new BadRequestError('Email in use')
     }
 
-    //Hashing the password and storing user in DB
-    bcrypt.genSalt(10, async (err, salt) => {
-      bcrypt.hash(password, salt, async (err, hash) => {
-          password = hash
-          const user = User.build({email, password})
-          await user.save()
-          res.status(201).send(user);
-      });
-    });
+    const user = User.build({email, password})
+    await user.save()
+    res.status(201).send(user);
     
   }
 );
