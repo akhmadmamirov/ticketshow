@@ -37,7 +37,10 @@ This command will initiate the development environment and deploy the microservi
 
 Environment Variable
 Make sure to provide the JWT key as an environment variable.
-
+```bash
+kubectl create secret generic jwt-secret --from-l
+iteral=JWT_KEY=yourkey
+```
 
 Running Tests
 To run tests for the microservices, use the following npm script:
