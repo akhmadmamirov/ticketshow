@@ -43,8 +43,13 @@ iteral=JWT_KEY=yourkey
 ```
 
 Running Tests
-To run tests for the microservices, use the following npm script:
+To run tests for the microservices, use the following npm script from the serice that hosts tests:
 ```bash
 npm run tests
 ```
 Make sure you are in the root directory wherere skaffold.yaml file is located
+
+## Common Troubleshoot
+
+Encountering errors like "502 Bad Gateway" or connection refused (econnrefused 127.0.0.1)?
+- Delete the ingress and then reinstall it from the [official website](https://kubernetes.github.io/ingress-nginx/deploy/)
