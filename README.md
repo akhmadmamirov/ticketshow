@@ -52,4 +52,8 @@ Make sure you are in the root directory wherere skaffold.yaml file is located
 ## Common Troubleshoot
 
 Encountering errors like "502 Bad Gateway" or connection refused (econnrefused 127.0.0.1)?
-- Delete the ingress and then reinstall it from the [official website](https://kubernetes.github.io/ingress-nginx/deploy/)
+- Delete the ingress
+```bash
+kubectl delete namespace ingress-nginx
+```
+- Reinstall it from the [official website](https://kubernetes.github.io/ingress-nginx/deploy/)
