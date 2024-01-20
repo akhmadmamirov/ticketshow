@@ -42,7 +42,7 @@ kubectl create secret generic jwt-secret --from-l
 iteral=JWT_KEY=yourkey
 ```
 
-Running Tests
+## Running Tests
 To run tests for the microservices, use the following npm script from the serice that hosts tests:
 ```bash
 npm run tests
