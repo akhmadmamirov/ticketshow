@@ -47,6 +47,12 @@ To run tests for the microservices, use the following npm script from the serice
 ```bash
 npm run tests
 ```
+To test nats streaming service: first port forward nats using
+```bash
+  kubectl port-forward <pod Name> <from matrching port>: <to forwarding port> 
+  Ex: kubectl port-forward nats-depl-78874bcd8f-m6vxg 4222:4222
+```
+
 Make sure you are in the root directory wherere skaffold.yaml file is located
 
 ## Common Troubleshoot
