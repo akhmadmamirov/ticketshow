@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import express, { Request, Response } from 'express';
-import { requireAuth, validateRequest } from '@rallycoding/common';
+import { requireAuth, validateRequest } from 'akhmadillobekcommon';
 import { body } from 'express-validator';
 
 const router = express.Router();
