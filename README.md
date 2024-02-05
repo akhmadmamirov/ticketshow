@@ -3,6 +3,7 @@
 This repository contains a microservices-based e-commerce application named "Ticketing." The app is built using Docker and Kubernetes, leveraging various technologies including Typescript, NextJs, Jest, and BootstrapJs. Additionally, it utilizes JWT (JSON Web Tokens) for authentication, and the JWT key is provided through the environment variable.
 
 ## Microservices
+<img width="400" height="250" alt="k8s ingress" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/4447114c-3927-44ab-90e2-95aa8f0f293b">
 
 ### Auth Microservice
 - Manages user authentication
@@ -14,6 +15,8 @@ This repository contains a microservices-based e-commerce application named "Tic
 - Interacts with the Auth microservice for authentication
 
 ## Technologies Used
+<img width="400" height="250" alt="k8scluster" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/1168b372-e630-4522-b837-0ba9488db390">
+
 - Docker: Containerization of microservices
 - Kubernetes: Orchestration and deployment of microservices
 - Typescript: Typed superset of JavaScript
@@ -28,6 +31,16 @@ This repository contains a microservices-based e-commerce application named "Tic
 - Server-side rendering with NextJs for SEO optimization and mobile support
 
 ## Getting Started
+<img width="450" height="220" alt="docker" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/b33c8fdd-f154-4455-aed1-81fa987a526d">
+
+Building the first docker image:
+```bash
+ docker build -t yourDockerUsername/nameOfTheService .
+```
+Then push it to docker hub
+```bash
+ docker push yourDockerUsername/nameOfTheService 
+```
 To start all microservices, run the following command using Skaffold:
 ```bash
 skaffold dev
