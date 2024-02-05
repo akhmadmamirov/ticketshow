@@ -28,6 +28,14 @@ This repository contains a microservices-based e-commerce application named "Tic
 - Server-side rendering with NextJs for SEO optimization and mobile support
 
 ## Getting Started
+Building the first docker image:
+```bash
+ docker build -t yourDockerUsername/nameOfTheService .
+```
+Then push it to docker hub
+```bash
+ docker push yourDockerUsername/nameOfTheService 
+```
 To start all microservices, run the following command using Skaffold:
 ```bash
 skaffold dev
