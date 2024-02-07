@@ -48,11 +48,11 @@ skaffold dev
 
 This command will initiate the development environment and deploy the microservices using Kubernetes.
 
-Environment Variable
+## Environment Variables
 Make sure to provide the JWT key as an environment variable.
 ```bash
-kubectl create secret generic jwt-secret --from-l
-iteral=JWT_KEY=yourkey
+kubectl create secret generic your-secret --from-l
+iteral NAME_OF_THE_KEY=VAL_OF_THE_KEY
 ```
 
 ## Running Tests
