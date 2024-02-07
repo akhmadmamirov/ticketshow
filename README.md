@@ -51,7 +51,7 @@ This command will initiate the development environment and deploy the microservi
 Environment Variable
 Make sure to provide the JWT key as an environment variable.
 ```bash
-kubectl create secret generic jwt-secret --from-l
+kubectl create secret generic your-secret --from-l
 iteral NAME_OF_THE_KEY=VAL_OF_THE_KEY
 ```
 
