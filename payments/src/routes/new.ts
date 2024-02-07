@@ -5,6 +5,7 @@ import { requireAuth,
   NotFoundError, NotAuthorizedError, OrderStatus 
 } from "akhmadillobekcommon";
 import { Order } from "../models/order";
+import { stripe } from "../stripe";
 
 const router = express.Router();
 
@@ -35,6 +36,14 @@ router.post("/api/payments",
     if (order.status === OrderStatus.Cancelled) {
       throw new BadRequestError("Can not pay for cancelled order");
     }
+
+    //Creating a charge
+
+    await stripe.charges.create({
+      currency: 'usd',
+      amount: order.price * 100,
+      source: token
+    })
 
     res.send({ succes: true })
 })  
