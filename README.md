@@ -52,7 +52,7 @@ Environment Variable
 Make sure to provide the JWT key as an environment variable.
 ```bash
 kubectl create secret generic jwt-secret --from-l
-iteral=JWT_KEY=yourkey
+iteral NAME_OF_THE_KEY=VAL_OF_THE_KEY
 ```
 
 ## Running Tests
