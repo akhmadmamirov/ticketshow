@@ -15,6 +15,12 @@ spec:
       containers:
         - name: client
           image: akhmadillobek/client
+          env:
+            - name: NEXT_PUBLIC_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: stripeapi-secret
+                  key: PUBLIC_KEY
 
 ---
 apiVersion: v1
