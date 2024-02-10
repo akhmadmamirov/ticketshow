@@ -76,3 +76,11 @@ Encountering errors like "502 Bad Gateway" or connection refused (econnrefused 1
 kubectl delete namespace ingress-nginx
 ```
 - Reinstall it from the [official website](https://kubernetes.github.io/ingress-nginx/deploy/)
+
+## Future Development:
+- Frontend (client)
+- Add in HTTPS support
+- Add in email support
+- Add in 'build' steps for prod cluster (building Docker images in a prod style)
+- Create a staging cluster
+- Adding addtional services
