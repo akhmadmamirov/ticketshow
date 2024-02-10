@@ -1,4 +1,4 @@
-name: tests-auth
+name: tests-orders
 
 on:
   pull_request
@@ -11,4 +11,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18.17.1"
-      - run: cd payments && npm install && npm run test:ci
+      - run: cd orders && npm install && npm run test:ci
