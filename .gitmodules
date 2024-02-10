@@ -1,0 +1,6 @@
+[submodule "common/ticketing-npm"]
+	path = common/ticketing-npm
+	url = https://github.com/akhmadmamirov/ticketing-npm.git
+[submodule "ticketing-npm"]
+	path = ticketing-npm
+	url = https://github.com/akhmadmamirov/ticketing-npm.git
