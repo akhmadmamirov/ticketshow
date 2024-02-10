@@ -1,0 +1,3 @@
+[submodule "ticketing-npm"]
+	path = ticketing-npm
+	url = https://github.com/akhmadmamirov/ticketing-npm.git
