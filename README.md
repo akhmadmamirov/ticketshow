@@ -35,18 +35,23 @@ Cloud Services & Distributed Systems.
 
 ## tickets
 
+## nats streaming service (event bus)
 
 <img width="400" height="250" alt="k8s ingress" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/4447114c-3927-44ab-90e2-95aa8f0f293b">
 
 ## Routes Documentation:
 - Refer this [documentation](https://akhmadmamirov.github.io/ticketShow-Routes-doc) for routing rules.
-  
 
-<img width="400" height="250" alt="k8scluster" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/1168b372-e630-4522-b837-0ba9488db390">
+## Video Walkthrough:
+https://github.com/akhmadmamirov/ticketshow/assets/105142060/047d71e5-fc9e-46b0-9907-8cd0b859f215
+
+
+
+
+<img width="400" height="220" alt="k8scluster" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/1168b372-e630-4522-b837-0ba9488db390">
+<img width="400" height="220" alt="docker" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/b33c8fdd-f154-4455-aed1-81fa987a526d">
 
 ## Getting Started:
-<img width="450" height="220" alt="docker" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/b33c8fdd-f154-4455-aed1-81fa987a526d">
-
 Building the first docker image:
 ```bash
  docker build -t yourDockerUsername/nameOfTheService .
