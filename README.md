@@ -16,42 +16,39 @@ Cloud Services & Distributed Systems.
 
 - Developed robust test suites leveraging: Jest for unit tests, Postman and Supertest for integration testing, mock callbacks for event publication reporting, and Github Pipelines for: build, test, deploy, and CI/CD DevOps procedures ✅
 
+## Routes Documentation:
+- Refer to this [documentation](https://akhmadmamirov.github.io/ticketShow-Routes-doc) for routing rules.
+<img width="700" height="400" alt="image" src="https://github.com/akhmadmamirov/ticketshow/assets/105142060/286154b7-a66c-4dfa-8729-6d405bf020dd">
+
 
 ## Microservices Breakdown:
 
-## auth
+- Auth, client, expiration, payments, orders, tickets, client (frontend)
 
-## client
+### Event Bus:
+- Nats streaming service
+  
+### Load Balancer:
+- K8s Ingress Nginx
 
-## expiration
+### K8s deployments:
+- infra/k8s
 
-## infra/k8s
-
-## orders
-
-## payments
-
-## ticketing-npm (common lib)
-
-## tickets
-
-## nats streaming service (event bus)
+### Common library:
+- ticketing-npm 
 
 <img width="400" height="250" alt="k8s ingress" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/4447114c-3927-44ab-90e2-95aa8f0f293b">
-
-## Routes Documentation:
-- Refer this [documentation](https://akhmadmamirov.github.io/ticketShow-Routes-doc) for routing rules.
 
 ## Video Walkthrough:
 https://github.com/akhmadmamirov/ticketshow/assets/105142060/047d71e5-fc9e-46b0-9907-8cd0b859f215
 
 
-
-
 <img width="400" height="220" alt="k8scluster" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/1168b372-e630-4522-b837-0ba9488db390">
 <img width="400" height="220" alt="docker" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/b33c8fdd-f154-4455-aed1-81fa987a526d">
 
-## Getting Started:
+## Getting Started 🐳 :
+- Install dependencies in each service by cding into each service and running: npm install
+- Ex: cd tickets -> npm install
 Building the first docker image:
 ```bash
  docker build -t yourDockerUsername/nameOfTheService .
