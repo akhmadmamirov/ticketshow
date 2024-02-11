@@ -72,7 +72,7 @@ iteral NAME_OF_THE_KEY=VAL_OF_THE_KEY
 ```
 
 ## Running Tests:
-To run tests for the microservices, use the following npm script from the serice that hosts tests:
+To run tests ☝️ for the microservices, use the following npm script from the serice that hosts tests:
 ```bash
 npm run tests
 ```
@@ -93,7 +93,7 @@ kubectl delete namespace ingress-nginx
 ```
 - Reinstall it from the [official website](https://kubernetes.github.io/ingress-nginx/deploy/)
 
-## Future Development:
+## Future Development: ❤️
 - Frontend (client)
 - Add in HTTPS support
 - Add in email support
