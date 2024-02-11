@@ -5,6 +5,15 @@ This repository contains a microservices-based e-commerce application named "Tic
 ## Microservices
 <img width="400" height="250" alt="k8s ingress" src="https://github.com/akhmadmamirov/ticketing/assets/105142060/4447114c-3927-44ab-90e2-95aa8f0f293b">
 
+## Routes Documentation:
+- Here is the [documentation](https://akhmadmamirov.github.io/ticketShow-Routes-doc) for different routes routes
+<img width="400" height="250" alt="auth" src="https://github.com/akhmadmamirov/ticketshow/assets/105142060/c79323b7-0696-4676-a26c-12d20dd45230">
+<img width="400" height="250" src="https://github.com/akhmadmamirov/ticketshow/assets/105142060/1c1d55f5-845e-46ea-aa4b-7364ff2a7070">
+<img width="400" height="250"  alt="orders" src="https://github.com/akhmadmamirov/ticketshow/assets/105142060/04ff90fc-441d-4c54-a2e3-1bb82d73db7f">
+<img width="400" height="250" alt="payments" src="https://github.com/akhmadmamirov/ticketshow/assets/105142060/f1acbf77-5cc0-48f2-a6a6-fcde7de0c6c9">
+
+
+  
 ### Auth Microservice
 - Manages user authentication
 - Utilizes JWT for secure authentication
